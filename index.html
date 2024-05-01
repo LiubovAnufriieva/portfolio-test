@@ -5,17 +5,291 @@
     <link rel="icon" type="image/svg+xml" href="/favicon-one.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfolio." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Portfolio</title>
     
     <script type="module" crossorigin src="/portfolio-project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/portfolio-project/assets/index-10c40100.css">
+    <link rel="modulepreload" crossorigin href="/portfolio-project/assets/vendor-7c89a7af.js">
+    <link rel="stylesheet" href="/portfolio-project/assets/vendor-7c8ef494.css">
+    <link rel="stylesheet" href="/portfolio-project/assets/index-580f39f2.css">
   </head>
   <body>
-    
+    <header>
+  <div class="container">
+    <div class="logo">
+      <img class="logo-img" src="../img/header/Logo-img.jpeg" alt="logo" />
+      <span> Jefferson* </span>
+    </div>
+    <nav id="nav">
+      <svg class="burger-icon" width="28" height="28" viewBox="0 0 24 24">
+        <use xlink:href="../img/sprite.svg#icon-menu-burger"></use>
+      </svg>
+      <span id="menu-toggle">Menu</span>
+      <ul id="menu">
+        <li class="nav-list">
+          <a class="nav-list-link" href="#about-me">About me</a>
+        </li>
+        <li class="nav-list">
+          <a class="nav-list-link" href="#benefits">Benefits</a>
+        </li>
+        <li class="nav-list">
+          <a class="nav-list-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-list">
+          <a class="nav-list-link" href="#faq">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="header-btn order-btn" href="#work-together">Order the project</a>
+  </div>
+  <!-- Модальне вікно для бургер-меню -->
+
+  <div class="backdrop">
+    <!--is-open-->
+    <div class="mobile-menu">
+      <button class="mobile-menu-btn" type="button">
+        <svg class="xclose-btn-mob" width="28" height="28">
+          <use href="../img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu-list">
+        <li class="mobile-nav-list">
+          <a class="mobile-nav-list-link" href="./about-me.html">About me</a>
+        </li>
+        <li class="mobile-nav-list">
+          <a class="mobile-nav-list-link" href="./benefits.html">Benefits</a>
+        </li>
+        <li class="mobile-nav-list">
+          <a class="mobile-nav-list-link" href="./projects.html">Projects</a>
+        </li>
+        <li class="mobile-nav-list">
+          <a class="mobile-nav-list-link" href="./faq.html">FAQ</a>
+        </li>
+      </ul>
+      <a class="mobile-header-btn order-btn" href="./work-together.html"
+        >Order the project</a
+      >
+    </div>
+  </div>
+</header>
 
     <main>
-      
-      
+      <section class="hero-section">
+  <div class="hero-general-container">
+    <div class="container">
+      <div class="hero-title-container">
+        <h1 class="hero-title">
+          Hello. <br />I&#8217;m Fullstack Developer Lloyd Jefferson.
+        </h1>
+      </div>
+      <div class="hero-list-container">
+        <ul class="hero-list">
+          <li class="hero-list-item">
+            <a
+              class="hero-list-link"
+              href="https://www.instagram.com/goitclub/"
+              target="_blank"
+              >ig</a
+            >
+          </li>
+          <li class="hero-list-item">
+            <a
+              class="hero-list-link"
+              href="https://www.facebook.com/goITclub/"
+              target="_blank"
+              >fb</a
+            >
+          </li>
+          <li class="hero-list-item">
+            <a
+              class="hero-list-link"
+              href="https://www.youtube.com/c/GoIT"
+              target="_blank"
+              >yt</a
+            >
+          </li>
+          <li class="hero-list-item">
+            <a
+              class="hero-list-link"
+              href="https://github.com/inmate1/project-js-teamwork05"
+              target="_blank"
+              >gh</a
+            >
+          </li>
+        </ul>
+        <div class="hero-email">
+            <a class="hero-link-email" href="mailto:lloydjefferson@gmail.com"
+            >lloydjefferson@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="abt-me-section" id="about-me">
+    <div class="container">
+        <h2 class="visually-hidden">About me</h2>
+        <div class="first">
+            <div class="first-cont">
+                <p class="first-text"> I work with people all over the world to create impressive and
+                    <span class="first-span">functional</span><span class="second-span"> websites</span> that reflect
+                    each client's
+                    unique personality.
+                </p>
+            </div>
+        </div>
+
+        <picture>
+            <!-- Desktop screen 1440-->
+            <source media="(min-width: 1440px)" srcset="../img/about-me/about-desktop@1x.jpg 1x,
+                 ../img/about-me/about-desktop@2x.jpg 2x
+                 " type="image/jpg" />
+            <!-- Tablet screen -->
+            <source media="(min-width: 768px)" srcset="../img/about-me/about-tablet@1x.jpg 1x,
+        ../img/about-me/about-tablet@2x.jpg 2x
+        " type="image/jpg" />
+            <!-- Mobile screen -->
+            <source media="(max-width: 767px)" srcset="../img/about-me/about-mobile@1x.jpg 1x,
+        ../img/about-me/about-mobile@2x.jpg 2x
+        " type="image/jpg" />
+
+            <img class="about-img" src="../img/about-me/about-mobile.jpg" alt="Jefferson" loading="lazy" />
+        </picture>
+    </div>
+    <div class="second">
+        <ul class="list-information">
+            <li class="list-item">
+                <div class="about-us">
+                    <div class="accordion-header">
+                        <h3 class="list-item-title">ABOUT ME</h3>
+                        <button class="accordion-button" type="button">
+                            <svg class="mobile-open-us" width="18" height="18" aria-label="icon arrow up">
+                                <use href="../img/sprite.svg#icon-arrow-down"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="accordion-panel">
+                        <div class="right-text">
+                            <p class="list-item-description">
+                                I am Lloyd Jefferson, a talented programmer with extensive
+                                expertise in software development. I have an understanding of
+                                different programming languages and technologies, always ready
+                                to improve my skills. I always follow the latest trends and
+                                look for unconventional, creative solutions to problems. I
+                                have a high level of analytical skills and am able to
+                                effectively solve even the most difficult tasks encountered on
+                                the way.
+                            </p>
+                            <p class="list-item-description list-item-description2">
+                                Able to work both independently and in a team. I can
+                                effectively cooperate with colleagues, exchanging ideas and
+                                finding optimal solutions. Professional maturity allows you to
+                                calmly cope with challenges and stressful situations, while
+                                maintaining a high quality of work.I am always looking for
+                                opportunities for self-improvement. I actively study new
+                                technologies and practices to stay abreast of the latest
+                                innovations. I have a strong understanding of various
+                                programming languages, frameworks and architectural concepts
+                                that allow me to create efficient and scalable software.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="list-item">
+                <div class="about-us">
+                    <div class="accordion-header">
+                        <h3 class="list-item-title">ROLE</h3>
+                        <button class="accordion-button" type="button">
+                            <svg class="mobile-open-us" width="18" height="18" aria-label="icon arrow down">
+                                <use href="../img/sprite.svg#icon-arrow-down"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="accordion-panel">
+                        <div class="right-text">
+                            <ul class="list-item-list">
+                                <li>
+                                    <p class="list-item-description">Frontend development</p>
+                                </li>
+                                <li>
+                                    <p class="list-item-description">HeadlessCMS,Wordpress</p>
+                                </li>
+                                <li>
+                                    <p class="list-item-description">Blender(enjoy)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="list-item">
+                <div class="about-us">
+                    <div class="accordion-header">
+                        <h3 class="list-item-title">EDUCATION</h3>
+                        <button class="accordion-button" type="button">
+                            <svg class="mobile-open-us" width="18" height="18" aria-label="icon arrow down">
+                                <use href="../img/sprite.svg#icon-arrow-down"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="accordion-panel">
+                        <div class="right-text">
+                            <ul class="list-item-list">
+                                <li>
+                                    <p class="list-item-description">
+                                        2018 - 2019 / Frontend Development Diploma, GoIT IT
+                                        School,New York
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="list-item-description">
+                                        2019 - 2020 / Advanced Web Development Certificate, GoIT
+                                        IT School, New York
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="list-item-description">
+                                        2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="third-part">
+        <div class="about-swiper-around">
+            <div class="about-swiper-container">
+                <ul class="swiper-wrapper list-skills">
+                    <li class="swiper-slide list-icon active">HTML/CSS</li>
+                    <li class="swiper-slide list-icon">JavaScript</li>
+                    <li class="swiper-slide list-icon">React</li>
+                    <li class="swiper-slide list-icon">Node.js</li>
+                    <li class="swiper-slide list-icon">React Native</li>
+                    <li class="swiper-slide list-icon">Soft skills</li>
+                    <li class="swiper-slide list-icon">GIT</li>
+                </ul>
+            </div>
+            <button class="about-swiper-button" type="button">
+                <svg class="mobile-next-slider" width="28" height="28" aria-label="icon arrow right">
+                    <use href="../img/sprite.svg#icon-arrows-right"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+</section>
       
       
       
