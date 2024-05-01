@@ -1,1 +1,59 @@
+<header>
+  <div class="container">
+    <div class="logo">
+      <img class="logo-img" src="../img/header/Logo-img.jpeg" alt="logo" />
+      <span> Jefferson* </span>
+    </div>
+    <nav id="nav">
+      <svg class="burger-icon" width="28" height="28" viewBox="0 0 24 24">
+        <use xlink:href="../img/sprite.svg#icon-menu-burger"></use>
+      </svg>
+      <span id="menu-toggle">Menu</span>
+      <ul id="menu">
+        <li class="nav-list">
+          <a class="nav-list-link" href="#about-me">About me</a>
+        </li>
+        <li class="nav-list">
+          <a class="nav-list-link" href="#benefits">Benefits</a>
+        </li>
+        <li class="nav-list">
+          <a class="nav-list-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-list">
+          <a class="nav-list-link" href="#faq">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="header-btn order-btn" href="#work-together">Order the project</a>
+  </div>
+  <!-- Модальне вікно для бургер-меню -->
 
+  <div class="backdrop">
+    <!--is-open-->
+    <div class="mobile-menu">
+      <button class="mobile-menu-btn" type="button">
+        <svg class="xclose-btn-mob" width="28" height="28">
+          <use href="../img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu-list">
+        <li class="mobile-nav-list">
+          <a class="mobile-nav-list-link" href="./about-me.html">About me</a>
+        </li>
+        <li class="mobile-nav-list">
+          <a class="mobile-nav-list-link" href="./benefits.html">Benefits</a>
+        </li>
+        <li class="mobile-nav-list">
+          <a class="mobile-nav-list-link" href="./projects.html">Projects</a>
+        </li>
+        <li class="mobile-nav-list">
+          <a class="mobile-nav-list-link" href="./faq.html">FAQ</a>
+        </li>
+      </ul>
+      <a class="mobile-header-btn order-btn" href="./work-together.html"
+        >Order the project</a
+      >
+    </div>
+  </div>
+</header>
