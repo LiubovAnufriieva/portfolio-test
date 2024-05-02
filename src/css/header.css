@@ -30,14 +30,17 @@ header .container {
   list-style-type: none;
   margin-top: 8px;
   padding: 0;
-  display: none; /* Hide menu by default */
+  display: none;
+  /* Hide menu by default */
   position: absolute;
   /* Position menu below the nav */
   right: auto;
   left: auto;
-  background-color: rgba(255, 255, 255, 0); /* Transparent background */
+  background-color: rgba(255, 255, 255, 0);
+  /* Transparent background */
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0); /* Add shadow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+  /* Add shadow */
   text-align: center;
   cursor: pointer;
 }
@@ -51,7 +54,8 @@ header .container {
 
 .nav-list {
   display: block;
-  margin-bottom: 10px;  /* Add spacing between menu items */
+  margin-bottom: 10px;
+  /* Add spacing between menu items */
 }
 
 .nav-list-link {
@@ -94,10 +98,11 @@ header .container {
 
   .header-btn,
   #menu-toggle {
-    display: none; /* Приховує кнопку та текст Меню для мобільних пристроїв */
+    display: none;
+    /* Приховує кнопку та текст Меню для мобільних пристроїв */
   }
 
-   /* Стилі для відображення меню при кліку на іконку бургер-меню */
+  /* Стилі для відображення меню при кліку на іконку бургер-меню */
   #menu:target {
     display: block;
     position: fixed;
@@ -108,6 +113,7 @@ header .container {
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1000;
   }
+
   .burger-icon {
     display: block;
   }
@@ -168,8 +174,8 @@ header .container {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.75s cubic-bezier(0.4, 0, 0.2, 1), 
-  visibility 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.75s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-list {
@@ -177,6 +183,7 @@ header .container {
   text-align: center;
   padding-top: 50%;
 }
+
 .mobile-header-btn {
   position: fixed;
   bottom: 64px;
