@@ -1,0 +1,135 @@
+.background {
+    background-image: url(../img/covers/background-covers.png);
+    background-position: center center;
+    margin: 0 auto;
+  
+    /* min-width: 320px;
+    max-width: 374.98px; */
+  
+  }
+  .covers {
+    padding: 0;
+    width: 100vw;
+  }
+  
+  .hidden-title {
+    display: none;
+  }
+  
+  .marquee__inner.top-right,
+  .marquee__inner.hidden-before-desktop,
+  .marquee__line.hidden-before-desktop,
+  .marquee__line.hidden-before-tablet {
+    display: none;
+  }
+  
+  .covers-img {
+    height: 100%;
+    width: 282px;
+  }
+  
+  .content-marguee {
+    /* max-width: 375px; */
+    height: 508px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .marquee {
+    width: fit-content;
+    transform: rotate(17deg);
+    position: absolute;
+    top: 10px;
+  }
+  
+  .marquee__inner {
+    margin-bottom: 23px;
+    display: flex;
+    /* transform: rotate(16deg); */
+  }
+  
+  .marquee__line {
+    background-color: black;
+    flex-shrink: 0;
+    margin-right: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 282px; */
+    /* height: 162px; */
+    white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes marqueeLine {
+    from {
+      transform: translateX(-20%);
+    }
+  
+    to {
+      transform: translateX(-180%);
+    }
+  }
+  
+  /* tablet */
+  @media only screen and (min-width: 768px) {
+    /* .covers > .container {
+      max-width: 100%;
+    } */
+  
+    .content-marguee {
+      height: 960px;
+    }
+  
+    .marquee__line.hidden-before-tablet {
+      display: flex;
+    }
+    .background {
+      background-size: contain;
+      /* max-width: 768px; */
+    }
+    .marquee {
+      height: max-content;
+  
+    }
+              .covers-img {
+                width: 544px;
+              }
+  }
+  /* desktop */
+  @media only screen and (min-width: 1440px) {
+    /* .covers > .container {
+      max-width: 100%;
+    } */
+  
+    .marquee__line.hidden-before-desktop {
+      display: flex;
+    }
+    .background {
+      background-repeat: no-repeat;
+      /* max-width: 1440px; */
+    }
+  
+    .marquee {
+      top: 100px;
+  
+    }
+  
+    .marquee__line {
+      display: flex;
+      width: max-content;
+    }
+      .marquee__inner.top-right {
+        display: flex;
+      }
+  }
+  
+  @media only screen and (min-width: 1600px) {
+    .marquee {
+      top: 60px;
+      left: -120px;
+    }
+  }
