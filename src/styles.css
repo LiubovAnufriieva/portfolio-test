@@ -4,7 +4,7 @@
   | default @import url()
   |============================
 */
-@import url('./css/normalize.css');
+/* @import url('./css/normalize.css'); */
 @import url('./css/reset.css');
 @import url('./css/base.css');
 @import url('./css/header.css');
@@ -18,3 +18,4 @@
 @import url('./css/work-together.css');
 @import url('./css/menu.css');
 @import url('./css/modal.css');
+@import url('../node_modules/modern-normalize/modern-normalize.css');
