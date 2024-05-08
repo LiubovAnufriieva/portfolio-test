@@ -1,0 +1,20 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./css/normalize.css');
+@import url('./css/reset.css');
+@import url('./css/base.css');
+@import url('./css/header.css');
+@import url('./css/hero.css');
+@import url('./css/about-me.css');
+@import url('./css/benefits.css');
+@import url('./css/projects.css');
+@import url('./css/faq.css');
+@import url('./css/covers.css');
+@import url('./css/reviews.css');
+@import url('./css/work-together.css');
+@import url('./css/menu.css');
+@import url('./css/modal.css');
