@@ -2,7 +2,7 @@
   content: none;
 }
 
-.faq-conteiner {
+.faq-container{
   /* background-color: transparent; */
   max-width: 375px;
   margin-right: auto;
@@ -13,22 +13,22 @@
 }
 
 @media screen and (min-width: 768px) {
-  body .faq-conteiner {
+  body .faq-container {
     padding-bottom: 96px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  body .faq-conteiner {
+  body .faq-container {
     padding-bottom: 164px;
   }
 }
 
-.list-item.ac.js-enabled .box-conteiner .box-icon {
+.list-item.ac.js-enabled .box-container .box-icon {
   transform: none;
 }
 
-.list-item.ac.js-enabled.is-active .box-conteiner .box-icon {
+.list-item.ac.js-enabled.is-active .box-container .box-icon {
   transform: rotate(180deg);
 }
 
@@ -37,7 +37,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  body .faq-conteiner {
+  body .faq-container {
     max-width: 768px;
     padding-right: 32px;
     padding-left: 32px;
@@ -45,7 +45,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  body .faq-conteiner {
+  body .faq-container {
     max-width: 1440px;
   }
 }
@@ -87,11 +87,11 @@
   }
 }
 
-.list .marg-left .list-item-title .box-conteiner {
+.list .marg-left .list-item-title .box-container {
   margin-left: 70px;
 }
 
-.list .margen-left .list-item-title .box-conteiner {
+.list .margin-left .list-item-title .box-container {
   margin-left: 100px;
 }
 
@@ -138,7 +138,7 @@
   text-transform: none;
 }
 
-.list-item .list-item-title .box-conteiner {
+.list-item .list-item-title .box-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -152,7 +152,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .list-item:last-child .list-item-title .box-conteiner {
+  .list-item:last-child .list-item-title .box-container {
     margin-left: 200px;
   }
 }
