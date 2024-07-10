@@ -6,8 +6,11 @@ const swiper = new Swiper('.swiper-container', {
   modules: [Keyboard, Mousewheel, Navigation],
   speed: 500,
   direction: 'horizontal',
+  swipeHandler: '.reviews-item',
   slidesPerView: 1,
   spaceBetween: 16,
+  enabled: true,
+  swipeHandler: '.swiper-slide',
 
   keyboard: {
     enabled: true,

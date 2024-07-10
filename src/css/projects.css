@@ -213,11 +213,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .img {
-    height: 385px;
-  }
-}
+
 
 .buttons {
   display: flex;
@@ -236,6 +232,7 @@
 
 .button:disabled {
   border: 1px solid rgba(250, 250, 250, 0.2);
+  cursor: no-drop;
 }
 
 .arrow {
@@ -247,4 +244,18 @@
 
 .button:disabled .arrow {
   stroke: #3b3b3b;
+}
+
+@media only screen and (min-width: 768px) {
+  .img {
+    height: 385px;
+  }
+  .button {
+    width: 68px;
+    height: 68px;
+  }
+  .arrow {
+    width: 32px;
+    height: 32px;
+  }
 }
